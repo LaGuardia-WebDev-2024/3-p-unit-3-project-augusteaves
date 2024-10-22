@@ -1,9 +1,9 @@
 <!--
 Requirements
-[  ] Two External Links
-[  ] Table
-[  ] Three CSS Rules
-[  ] Three Images
+[  yes] Two External Links
+[ yes ] Table
+[ yes] Three CSS Rules
+[ yes ] Three Images
 
 Select ONE Additional Feature to Add  
 [ no ] Feature 1 - Include a :hover feature
@@ -14,47 +14,175 @@ Select ONE Additional Feature to Add
 
 <!DOCTYPE html>
 <html>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&display=swap"
+    rel="stylesheet"
+  />
+  <head>
+    <title>Project: True Crime Cases</title>
+    <meta charset="utf-8" />
+    <style>
+      h1 {
+        background-color: #e6beae;
+      }
+      body {
+        background-color: #b2967d;
+      }
+      .col1 {
+        background-color: #e7d8c9;
+      }
+      .col2 {
+        background-color: #eee4e1;
+      }
+      .col3 {
+        background-color: #ecf8f8;
+      }
 
-<head>
-  <title>Project: Recipe book</title>
-  <meta charset="utf-8">
-  <style>
-  </style>
-</head>
+      table,
+      th,
+      td {
+        border: 1px solid;
+      }
+      .col1:hover {
+        background-color: #efd3d7;
+      }
+      .col2:hover {
+        background-color: #feeafa;
+      }
+      .col3:hover {
+        background-color: #dee2ff;
+      }
+      h1:hover {
+        background-color: #cbc0d3;
+      }
+      body {
+        font-family: "Merienda", cursive;
+        text-align: center
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Unsolved Cases</h1>
 
-<body>
-
-  <h1>____'s Recipe Book</h1>
-
-  <h2>Contents:</h2>
-
-  <ol>
-    <li><a href="?">Recipe #1</a></li>
-  </ol>
-
-  <h2 id="?">Recipe #1</h2>
-
-  <ul>
-    <li>Time: _</li>
-    <li>Serves: _</li>
-  </ul>
-
-  <table>
-    <thead>
-      <tr>
-        <th>Ingredients</th>
-        <th>Quantity</th>
-      </tr>
-    </thead>
-    <tbody>
-    </tbody>
-  </table>
-
-  <p><strong>Step 1:</strong> Do something.
-  </p>
-
-  <p><em>Source: <a href="?">Some recipes websites</a></em></p>
-
-</body>
-
+    <table>
+      <thead>
+        <tr>
+          <th class="col1">Photo</th>
+          <th class="col2">Victim</th>
+          <th class="col3">Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="col1">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgWKNX0sZRXs1ZP9TsZ3M-7NZ5OzIc3k1Mhw&s"
+              width="200"
+              alt="Elisa"
+            />
+          </td>
+          <td class="col2">
+            <a href="https://www.imdb.com/title/tt13837672/">Elisa Lam</a>
+          </td>
+          <td class="col3">
+            In 2013, Elisa Lam, a 21-year-old tourist from Vancouver, British
+            Columbia, disappeared while staying at the Cecil Hotel, a Los
+            Angeles hotel with a long and lurid history. She was last seen on
+            January 31, 2013. As part of the police investigation, a video was
+            released that showed Lam behaving erratically in a hotel elevator.
+            On February 19, 2013, Lam's body was found inside a water tank on
+            the roof of the hotel. Her death was later determined to be an
+            accidental drowning, though the exact circumstances that led to this
+            remain unclear.
+          </td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <td class="col1">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/en/8/88/Jonbenet-ramsey.jpg"
+              width="200"
+              alt="Jonbenet"
+            />
+          </td>
+          <td class="col2">
+            <a href="https://www.imdb.com/title/tt6087230/?ref_=fn_al_tt_2"
+              >JonBenét Ramsey</a
+            >
+          </td>
+          <td class="col3">
+            The 6 year-old beauty pageant queen, JonBenét Ramsey, was found
+            murdered in her Boulder, Colorado, home on December 26, 1996. She
+            was strangled and hit in the head with an unidentifiable object.
+            There was no signs of forced entry in the home, no one has ever been
+            charged in the case and the investigation is still open. Early
+            suspicion fell on her parents, but they were exonerated after DNA at
+            the scene was found to belong to a male unrelated to the Ramsey
+            family. But, evidence that she had a small amount of pineapple that
+            was not digested, suggesting she ate it shortly before her death.
+            John Ramsey initially stated that she had arrived at home from the
+            party already asleep, and he put her in bed, but the story later
+            changed (so, he lied). She was awake at some point, and even if the
+            bowl was Burke’s and not hers, she could’ve easily walked by and
+            grabbed a piece out of the bowl…not something she would likely have
+            done if she were with an intruder.
+          </td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <td class="col1">
+            <img
+              src="https://people.com/thmb/m5K3Nv8eqRrwaZHjA2CQjKJCa_E=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(805x0:807x2)/madeleine-mccann-1-2000-6de52619ec52426a9fd34b680cc617ac.jpg"
+              width="200"
+              alt="Madeline"
+            />
+          </td>
+          <td class="col2">
+            <a href="https://www.imdb.com/title/tt9879074/">Madeline McCann</a>
+          </td>
+          <td class="col3">
+            On May 3, 2007, 3 year old Madeleine vanished from her bed at her
+            family's vacation apartment in Praia da Luz, Portugal. The McCanns
+            were visiting from the United Kingdom, where they lived. She had
+            been left with her 2-year-old twin siblings in the unlocked rental
+            while Kate and Gerry dined with friends at a restaurant 130 feet
+            away. The parents took turns checking on their children
+            periodically, but later that night, Kate noticed an open window and
+            Madeleine missing from her bed. She has not been seen since, and the
+            investigation is still open.
+          </td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <td>
+            <img
+              src="https://s.yimg.com/ny/api/res/1.2/4.jmp66Pz6mPymXJ45K3Sg--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTQ1Nw--/https://media.zenfs.com/en/the_huffington_post_584/86988db220cf1671b1511de36cd667e1"
+              width="210"
+              alt="Asha"
+            />
+          </td>
+          <td class="col2">
+            <a href="https://www.imdb.com/title/tt17096710/?ref_=fn_al_tt_2"
+              >Asha Degree</a
+            >
+          </td>
+          <td class="col3">
+            Asha Jaquilla Degree went missing at the age of nine from Shelby,
+            North Carolina, United States. In the early morning hours of
+            February 14, 2000, for reasons unknown, she packed her bookbag, left
+            her family home north of the city and began walking along nearby
+            North Carolina Highway 18 despite heavy rain and wind. One witness
+            went to approach her and Asha ran into a wooded area. Later in the
+            morning, Asha's parents discovered her missing from her bedroom. She
+            has not been seen since.
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
 </html>
